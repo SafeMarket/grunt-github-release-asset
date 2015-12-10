@@ -80,7 +80,8 @@ Github.prototype.uploadAsset = function (releaseId, file, callback) {
 		method: 'POST',
 		url: url,
 		headers: this.headers,
-		formData: formData
+		formData: formData,
+		encoding: 'binary'
 	}, callbackWrapper(callback));
 };
 
